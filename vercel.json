@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/vr-gallery/(.*)",
+      "destination": "/vr-gallery/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
