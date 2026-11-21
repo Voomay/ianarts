@@ -262,22 +262,19 @@ export default function App() {
     setIsLoading(true);
     setLoadingProgress(10);
 
-    // Smoothly step loader 10, 20, 30, 40, 50... while Three.js initializes
+    // Smoothly step loader 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 while Three.js initializes
     progressTimerRef.current = window.setInterval(() => {
       setLoadingProgress((prev) => {
         if (prev >= 90) {
           if (sceneReadyRef.current) {
             finishLoading();
+            return 100;
           }
-          return prev;
+          return 90;
         }
-        const next = Math.min(90, prev + 10);
-        if (next >= 50 && sceneReadyRef.current) {
-          finishLoading();
-        }
-        return next;
+        return prev + 10;
       });
-    }, 110);
+    }, 75);
 
     // Yield one frame so the loading UI paints immediately before Three.js initializes
     requestAnimationFrame(() => {
@@ -375,7 +372,7 @@ export default function App() {
               onPlaySong={handlePlaySong}
               onPauseSong={handlePauseSong}
               discoMode={discoMode}
-              onLoadProgress={(pct) => setLoadingProgress((prev) => Math.max(prev, Math.min(90, Math.floor(pct / 10) * 10)))}
+              onLoadProgress={() => {}}
               onSceneReady={() => {
                 sceneReadyRef.current = true;
               }}
