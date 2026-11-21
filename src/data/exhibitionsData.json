@@ -1,0 +1,95 @@
+[
+  {
+    "id": "exhibition-1-2019",
+    "title": "1st Exhibition",
+    "subtitle": "Youngblood Arts & Culture (2019)",
+    "year": "2019",
+    "venue": "Youngblood Arts & Culture, Cape Town",
+    "category": "Solo Exhibition",
+    "description": "IanArt's maiden solo exhibition at Youngblood Arts & Culture Gallery. Introducing bold graphic portraiture and vibrant expressions exploring contemporary identity.",
+    "images": [
+      "/images/exhibitions/exhibition-1-2019-1.jpeg",
+      "/images/exhibitions/exhibition-1-2019-2.jpeg",
+      "/images/exhibitions/exhibition-1-2019-3.jpeg"
+    ]
+  },
+  {
+    "id": "exhibition-2",
+    "title": "2nd Exhibition",
+    "subtitle": "Youngblood Arts & Culture",
+    "year": "2020",
+    "venue": "Youngblood Arts & Culture, Cape Town",
+    "category": "Solo Exhibition",
+    "description": "The follow-up showcase continuing the exploration of raw emotion, high-contrast acrylics, and monumental canvas compositions.",
+    "images": [
+      "/images/exhibitions/exhibition-2-1.jpeg",
+      "/images/exhibitions/exhibition-2-2.jpeg",
+      "/images/exhibitions/exhibition-2-3.jpeg"
+    ]
+  },
+  {
+    "id": "exhibition-3",
+    "title": "3rd Exhibition",
+    "subtitle": "Youngblood Arts & Culture",
+    "year": "2021",
+    "venue": "Youngblood Arts & Culture, Cape Town",
+    "category": "Curated Showcase",
+    "description": "Expansive collection highlighting mixed media, structural typography, and vibrant figurative portraiture.",
+    "images": [
+      "/images/exhibitions/exhibition-3-1.jpeg",
+      "/images/exhibitions/exhibition-3-2.jpeg",
+      "/images/exhibitions/exhibition-3-3.jpeg",
+      "/images/exhibitions/exhibition-3-4.jpeg",
+      "/images/exhibitions/exhibition-3-5.jpeg",
+      "/images/exhibitions/exhibition-3-6.jpeg"
+    ]
+  },
+  {
+    "id": "the-new-african",
+    "title": "The New African",
+    "subtitle": "Cultural Retrospective",
+    "year": "2022",
+    "venue": "Youngblood Gallery",
+    "category": "Feature Exhibition",
+    "description": "'The New African' series celebrates modern African resilience, heritage, and futuristic expression through vivid portraiture and symbolic iconography.",
+    "images": [
+      "/images/exhibitions/the-new-african-1.jpeg",
+      "/images/exhibitions/the-new-african-2.jpeg",
+      "/images/exhibitions/the-new-african-3.jpeg",
+      "/images/exhibitions/the-new-african-4.jpeg",
+      "/images/exhibitions/the-new-african-5.jpeg"
+    ]
+  },
+  {
+    "id": "exhibition-4",
+    "title": "4th Exhibition",
+    "subtitle": "Youngblood Arts & Culture",
+    "year": "2023",
+    "venue": "Youngblood Arts & Culture",
+    "category": "Solo Exhibition",
+    "description": "Comprehensive exhibition presenting IanArt's latest evolving styles, spatial light elements, and energetic color palette.",
+    "images": [
+      "/images/exhibitions/exhibition-4-1.jpeg",
+      "/images/exhibitions/exhibition-4-2.jpeg",
+      "/images/exhibitions/exhibition-4-3.jpeg",
+      "/images/exhibitions/exhibition-4-4.jpeg",
+      "/images/exhibitions/exhibition-4-5.jpeg",
+      "/images/exhibitions/exhibition-4-6.jpeg"
+    ]
+  },
+  {
+    "id": "exhibitions-showcase",
+    "title": "Gallery Highlights",
+    "subtitle": "Selected Exhibition Works",
+    "year": "2023 - 2024",
+    "venue": "Main Gallery",
+    "category": "Retrospective",
+    "description": "Selected highlight pieces and install views from major gallery shows and private viewing events across Cape Town.",
+    "images": [
+      "/images/exhibitions/exhibitions-showcase-1.jpeg",
+      "/images/exhibitions/exhibitions-showcase-2.jpeg",
+      "/images/exhibitions/exhibitions-showcase-3.jpeg",
+      "/images/exhibitions/exhibitions-showcase-4.jpeg"
+    ]
+  }
+]

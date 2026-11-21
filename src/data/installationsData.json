@@ -1,0 +1,135 @@
+[
+  {
+    "id": "general-installations",
+    "title": "IanArt Artwork Installations",
+    "subtitle": "Bridging Beauty and Space",
+    "category": "Featured Installations",
+    "description": "IanArt Albertyn's captivating artwork is not confined to galleries; it finds its rightful place within the heart of diverse spaces, both intimate and grand. Our installations in hotels and houses redefine the way art interacts with its environment, creating a symphony where aesthetics and atmosphere harmonize.",
+    "details": [
+      "Hotels: In hotels, IanArt's artwork transforms lobbies, corridors, and lounges into immersive galleries. Each piece is placed to reflect the ethos of the establishment, enriching the guest experience with an unexpected journey through color and form.",
+      "Houses: In the comfort of homes, IanArt's installations become personal sanctuaries of inspiration. Seamlessly blending with interior design while adding depth and character."
+    ],
+    "images": [
+      "/images/installations/general-installations-1.jpeg",
+      "/images/installations/general-installations-2.jpeg",
+      "/images/installations/general-installations-3.jpeg",
+      "/images/installations/general-installations-4.jpeg",
+      "/images/installations/general-installations-5.jpeg",
+      "/images/installations/general-installations-6.jpeg",
+      "/images/installations/general-installations-7.jpeg",
+      "/images/installations/general-installations-8.jpeg",
+      "/images/installations/general-installations-9.jpeg",
+      "/images/installations/general-installations-10.jpeg",
+      "/images/installations/general-installations-11.jpeg",
+      "/images/installations/general-installations-12.jpeg",
+      "/images/installations/general-installations-13.jpeg",
+      "/images/installations/general-installations-14.jpeg",
+      "/images/installations/general-installations-15.jpeg",
+      "/images/installations/general-installations-16.jpeg",
+      "/images/installations/general-installations-17.jpeg",
+      "/images/installations/general-installations-18.jpeg",
+      "/images/installations/general-installations-19.jpeg"
+    ]
+  },
+  {
+    "id": "marc-lottering",
+    "title": "Commission Work: Marc Lottering",
+    "subtitle": "Celebrity Portrait & Installation",
+    "category": "Commissioned Work",
+    "description": "Exclusive commissioned artwork created for legendary South African comedian and performer Marc Lottering. Capturing vibrant character, stage energy, and iconic presence.",
+    "details": [],
+    "images": [
+      "/images/installations/marc-lottering-1.jpeg",
+      "/images/installations/marc-lottering-2.jpeg",
+      "/images/installations/marc-lottering-3.jpeg",
+      "/images/installations/marc-lottering-4.jpeg",
+      "/images/installations/marc-lottering-5.jpeg",
+      "/images/installations/marc-lottering-6.jpeg",
+      "/images/installations/marc-lottering-7.jpeg",
+      "/images/installations/marc-lottering-8.jpeg",
+      "/images/installations/marc-lottering-9.jpeg",
+      "/images/installations/marc-lottering-10.jpeg"
+    ]
+  },
+  {
+    "id": "freedom-36",
+    "title": "FREEDOM 36",
+    "subtitle": "Blackbrick Club Hotel",
+    "category": "Hotel Installation",
+    "description": "The complete behind-the-scenes build up and installation of the monumental 'FREEDOM 36' artwork at the prestige Blackbrick Club Hotel.",
+    "details": [],
+    "images": [
+      "/images/installations/freedom-36-1.jpeg",
+      "/images/installations/freedom-36-2.jpeg",
+      "/images/installations/freedom-36-3.jpeg",
+      "/images/installations/freedom-36-4.jpeg",
+      "/images/installations/freedom-36-5.jpeg",
+      "/images/installations/freedom-36-6.jpeg",
+      "/images/installations/freedom-36-7.jpeg",
+      "/images/installations/freedom-36-8.jpeg",
+      "/images/installations/freedom-36-9.jpeg",
+      "/images/installations/freedom-36-10.jpeg",
+      "/images/installations/freedom-36-11.jpeg",
+      "/images/installations/freedom-36-12.jpeg",
+      "/images/installations/freedom-36-13.jpeg",
+      "/images/installations/freedom-36-14.jpeg",
+      "/images/installations/freedom-36-15.jpeg",
+      "/images/installations/freedom-36-16.jpeg",
+      "/images/installations/freedom-36-17.jpeg",
+      "/images/installations/freedom-36-18.jpeg",
+      "/images/installations/freedom-36-19.jpeg"
+    ]
+  },
+  {
+    "id": "red-cross",
+    "title": "Red Cross Children's Hospital",
+    "subtitle": "Charity Projects",
+    "category": "Philanthropy & Charity",
+    "description": "Art with purpose: Special installation and charity project supporting the Red Cross War Memorial Children's Hospital to bring light, hope, and healing through visual expression.",
+    "details": [],
+    "images": [
+      "/images/installations/red-cross-1.jpeg",
+      "/images/installations/red-cross-2.jpeg",
+      "/images/installations/red-cross-3.jpeg",
+      "/images/installations/red-cross-4.jpeg"
+    ]
+  },
+  {
+    "id": "blackbrick-imagination",
+    "title": "IMAGINATION",
+    "subtitle": "Blackbrick Club Hotel",
+    "category": "Hotel Installation",
+    "description": "High-impact art installations creating an engaging narrative throughout public spaces, hallways, and suites at Blackbrick Club Hotel.",
+    "details": [],
+    "images": [
+      "/images/installations/blackbrick-imagination-1.jpeg",
+      "/images/installations/blackbrick-imagination-2.jpeg",
+      "/images/installations/blackbrick-imagination-3.jpeg",
+      "/images/installations/blackbrick-imagination-4.jpeg",
+      "/images/installations/blackbrick-imagination-5.jpeg",
+      "/images/installations/blackbrick-imagination-6.jpeg",
+      "/images/installations/blackbrick-imagination-7.jpeg",
+      "/images/installations/blackbrick-imagination-8.jpeg",
+      "/images/installations/blackbrick-imagination-9.jpeg",
+      "/images/installations/blackbrick-imagination-10.jpeg"
+    ]
+  },
+  {
+    "id": "robert-sobukwe",
+    "title": "Robert Sobukwe & Sol Kerzner",
+    "subtitle": "Historical Portraits & Tributes",
+    "category": "Historical Commissions",
+    "description": "Commissioned tribute portraits created during lockdown honoring historical icons, including anti-apartheid leader Robert Mangaliso Sobukwe and business legend Sol Kerzner.",
+    "details": [],
+    "images": [
+      "/images/installations/robert-sobukwe-1.jpeg",
+      "/images/installations/robert-sobukwe-2.jpeg",
+      "/images/installations/robert-sobukwe-3.jpeg",
+      "/images/installations/robert-sobukwe-4.jpeg",
+      "/images/installations/robert-sobukwe-5.jpeg",
+      "/images/installations/robert-sobukwe-6.jpeg",
+      "/images/installations/robert-sobukwe-7.jpeg",
+      "/images/installations/robert-sobukwe-8.jpeg"
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "entities": {
+    "Artwork": {
+      "title": "Artwork",
+      "description": "An artwork displayed in the virtual gallery.",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "description": "The title of the artwork" },
+        "year": { "type": "string", "description": "The year of creation" },
+        "image": { "type": "string", "description": "The URL of the artwork image" },
+        "audio": { "type": "string", "description": "The URL of the artwork audio track" },
+        "description": { "type": "string", "description": "A detailed description of the artwork" },
+        "order": { "type": "number", "description": "Display order in the gallery" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["title", "year", "image", "description", "order"]
+    },
+    "Inquiry": {
+      "title": "Inquiry",
+      "description": "A purchase or rental inquiry from a user.",
+      "type": "object",
+      "properties": {
+        "artworkId": { "type": "string", "description": "The ID of the artwork" },
+        "artworkTitle": { "type": "string", "description": "The title of the artwork at the time of inquiry" },
+        "fullName": { "type": "string", "description": "The name of the inquirer" },
+        "email": { "type": "string", "description": "The email of the inquirer" },
+        "message": { "type": "string", "description": "The user's message" },
+        "type": { "type": "string", "enum": ["purchase", "rent"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["artworkId", "fullName", "email", "type", "createdAt"]
+    }
+  },
+  "firestore": {
+    "artworks/{artworkId}": {
+      "schema": "Artwork",
+      "description": "Collection of gallery artworks managed by the admin."
+    },
+    "inquiries/{inquiryId}": {
+      "schema": "Inquiry",
+      "description": "Collection of user inquiries for artworks."
+    }
+  }
+}
