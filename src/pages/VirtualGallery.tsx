@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
+import VRGalleryApp from "../vr-gallery/App";
 
 export const VirtualGallery: React.FC = () => {
   return (
@@ -9,18 +10,12 @@ export const VirtualGallery: React.FC = () => {
         to="/"
         aria-label="Back to IAN ART"
         title="Back to IAN ART"
-        className="fixed top-16 left-4 md:top-20 md:left-6 z-50 flex h-10 w-10 items-center justify-center rounded-full border border-white/25 bg-black/85 text-white backdrop-blur-md hover:bg-white hover:text-black transition-all duration-300 shadow-lg"
+        className="fixed top-16 left-4 md:top-20 md:left-6 z-50 flex h-10 w-10 items-center justify-center rounded-full border border-white/25 bg-black/85 text-white hover:bg-white hover:text-black transition-all duration-300 shadow-lg"
       >
         <ArrowLeft size={17} />
       </Link>
 
-      <iframe
-        src="/vr-gallery/index.html"
-        title="IAN ART Virtual Reality Gallery"
-        className="w-full h-full border-0 block"
-        allow="fullscreen; xr-spatial-tracking; autoplay; accelerometer; gyroscope"
-        allowFullScreen
-      />
+      <VRGalleryApp />
     </div>
   );
 };
