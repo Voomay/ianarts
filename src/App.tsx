@@ -1814,8 +1814,8 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
       {!hideLayout && <Navbar />}
       {children}
       {!hideLayout && <Footer />}
-      <DonateButton />
-      <WhatsAppButton />
+      {!hideLayout && <DonateButton />}
+      {!hideLayout && <WhatsAppButton />}
     </>
   );
 };
@@ -1823,37 +1823,48 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
 
 
 export default function App() {
+  const isTouchDevice =
+    typeof window !== "undefined" &&
+    ("ontouchstart" in window || navigator.maxTouchPoints > 0 || window.innerWidth < 1024);
+
+  const appContent = (
+    <div className="min-h-screen bg-black selection:bg-white selection:text-black font-sans">
+      <MainLayout>
+        <Routes>
+          <Route path="/" element={<Home2 />} />
+          <Route path="/home-2" element={<Home2 />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/commissioned-works" element={<CommissionedWorks />} />
+          <Route path="/virtual-gallery" element={<VirtualGallery />} />
+          <Route path="/exhibitions" element={<Exhibitions />} />
+          <Route path="/installations" element={<Installations />} />
+          <Route path="/qr-art" element={<QRArt />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/admin" element={<AdminDashboard />} />
+        </Routes>
+      </MainLayout>
+    </div>
+  );
+
   return (
     <Router>
-      <ReactLenis root options={{
-        lerp: 0.08,
-        duration: 1.2,
-        smoothWheel: true,
-        wheelMultiplier: 0.8,
-        touchMultiplier: 1.5,
-        infinite: false,
-      }}>
-        <div className="min-h-screen bg-black selection:bg-white selection:text-black font-sans">
-          
-          <MainLayout>
-            <Routes>
-              <Route path="/" element={<Home2 />} />
-              <Route path="/home-2" element={<Home2 />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/commissioned-works" element={<CommissionedWorks />} />
-              <Route path="/virtual-gallery" element={<VirtualGallery />} />
-              <Route path="/exhibitions" element={<Exhibitions />} />
-              <Route path="/installations" element={<Installations />} />
-              <Route path="/qr-art" element={<QRArt />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/admin" element={<AdminDashboard />} />
-            </Routes>
-          </MainLayout>
-          
-          <div className="fixed inset-0 pointer-events-none z-[100] opacity-[0.03] bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
-        </div>
-      </ReactLenis>
+      {isTouchDevice ? (
+        appContent
+      ) : (
+        <ReactLenis
+          root
+          options={{
+            lerp: 0.1,
+            duration: 1.0,
+            smoothWheel: true,
+            wheelMultiplier: 0.9,
+            infinite: false,
+          }}
+        >
+          {appContent}
+        </ReactLenis>
+      )}
     </Router>
   );
 }

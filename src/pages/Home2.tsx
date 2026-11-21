@@ -28,13 +28,13 @@ import {
 /* 1. HERO — block-by-block mosaic reveal + scroll framing             */
 /* ------------------------------------------------------------------ */
 
-const COLS = 12;
-const ROWS = 7;
-
 const Hero = () => {
   const ref = useRef<HTMLElement>(null);
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+  const cols = isMobile ? 6 : 12;
+  const rows = isMobile ? 4 : 7;
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
-  const p = useSpring(scrollYProgress, { stiffness: 90, damping: 25, mass: 0.4 });
+  const p = useSpring(scrollYProgress, { stiffness: 220, damping: 30, mass: 0.2 });
 
   const inset = useTransform(p, [0, 0.6], [0, 9]);
   const radius = useTransform(p, [0, 0.6], [0, 28]);
@@ -53,13 +53,13 @@ const Hero = () => {
 
   const delays = useMemo(
     () =>
-      Array.from({ length: COLS * ROWS }, (_, i) => {
-        const c = i % COLS;
-        const r = Math.floor(i / COLS);
-        const d = Math.hypot(c - COLS / 2, r - ROWS / 2);
-        return 0.15 + d * 0.06 + Math.random() * 0.35;
+      Array.from({ length: cols * rows }, (_, i) => {
+        const c = i % cols;
+        const r = Math.floor(i / cols);
+        const d = Math.hypot(c - cols / 2, r - rows / 2);
+        return 0.1 + d * 0.05 + Math.random() * 0.25;
       }),
-    []
+    [cols, rows]
   );
 
   return (
@@ -86,7 +86,7 @@ const Hero = () => {
           {/* Mosaic tiles that flip away block by block */}
           <div
             className="pointer-events-none absolute inset-0 grid"
-            style={{ gridTemplateColumns: `repeat(${COLS}, 1fr)`, gridTemplateRows: `repeat(${ROWS}, 1fr)`, perspective: 1200 }}
+            style={{ gridTemplateColumns: `repeat(${cols}, 1fr)`, gridTemplateRows: `repeat(${rows}, 1fr)`, perspective: 1200 }}
           >
             {delays.map((d, i) => (
               <motion.div
@@ -322,7 +322,7 @@ const HorizontalGallery = () => {
   }, []);
 
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end end"] });
-  const p = useSpring(scrollYProgress, { stiffness: 80, damping: 26, mass: 0.3 });
+  const p = useSpring(scrollYProgress, { stiffness: 220, damping: 32, mass: 0.2 });
   const x = useTransform(p, [0, 1], [0, -distance]);
   const bar = useTransform(p, [0, 1], ["0%", "100%"]);
   const bgText = useTransform(p, [0, 1], ["10%", "-40%"]);
@@ -379,7 +379,7 @@ const HorizontalGallery = () => {
 const Portal = () => {
   const ref = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end end"] });
-  const p = useSpring(scrollYProgress, { stiffness: 90, damping: 26 });
+  const p = useSpring(scrollYProgress, { stiffness: 220, damping: 30, mass: 0.2 });
   const r = useTransform(p, [0, 0.55], [9, 80]);
   const clip = useTransform(r, (v) => `circle(${v}% at 50% 50%)`);
   const scale = useTransform(p, [0, 0.6], [1.5, 1]);

@@ -17,7 +17,7 @@ export const wrap = (min: number, max: number, v: number) => {
 };
 
 export const Grain = () => (
-  <div className="pointer-events-none absolute inset-0 z-[60] opacity-[0.04] mix-blend-overlay bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
+  <div className="hidden md:block pointer-events-none absolute inset-0 z-[60] opacity-[0.04] mix-blend-overlay bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
 );
 
 export const Eyebrow = ({

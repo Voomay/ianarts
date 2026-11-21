@@ -7,10 +7,11 @@ export const VirtualGallery: React.FC = () => {
     <div className="relative w-screen h-[100dvh] bg-black overflow-hidden">
       <Link
         to="/"
-        className="fixed top-4 left-4 z-50 inline-flex items-center gap-2 rounded-full border border-white/25 bg-black/80 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.25em] text-white backdrop-blur-md hover:bg-white hover:text-black transition-all duration-300 shadow-lg"
+        aria-label="Back to IAN ART"
+        title="Back to IAN ART"
+        className="fixed top-16 left-4 md:top-20 md:left-6 z-50 flex h-10 w-10 items-center justify-center rounded-full border border-white/25 bg-black/85 text-white backdrop-blur-md hover:bg-white hover:text-black transition-all duration-300 shadow-lg"
       >
-        <ArrowLeft size={13} />
-        <span>Back to IAN ART</span>
+        <ArrowLeft size={17} />
       </Link>
 
       <iframe
