@@ -8,8 +8,6 @@ import { ArrowLeft, ArrowRight, Instagram, Facebook, Linkedin, Menu, X, ArrowUpR
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
 import { CustomCursor } from "./components/CustomCursor";
-import { ReactLenis } from "lenis/react";
-import "lenis/dist/lenis.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -197,7 +195,7 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 w-full z-50 px-6 md:px-12 flex justify-between items-center transition-all duration-500 ${
         isScrolled
-          ? 'py-3.5 bg-black/88 backdrop-blur-xl border-b border-white/15 shadow-[0_12px_40px_rgba(0,0,0,0.25)]'
+          ? 'py-3.5 bg-black/92 border-b border-white/15 shadow-[0_12px_40px_rgba(0,0,0,0.25)]'
           : 'py-6 md:py-8 bg-gradient-to-b from-black/70 via-black/30 to-transparent'
       }`}
     >
@@ -1823,48 +1821,25 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
 
 
 export default function App() {
-  const isTouchDevice =
-    typeof window !== "undefined" &&
-    ("ontouchstart" in window || navigator.maxTouchPoints > 0 || window.innerWidth < 1024);
-
-  const appContent = (
-    <div className="min-h-screen bg-black selection:bg-white selection:text-black font-sans">
-      <MainLayout>
-        <Routes>
-          <Route path="/" element={<Home2 />} />
-          <Route path="/home-2" element={<Home2 />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/commissioned-works" element={<CommissionedWorks />} />
-          <Route path="/virtual-gallery" element={<VirtualGallery />} />
-          <Route path="/exhibitions" element={<Exhibitions />} />
-          <Route path="/installations" element={<Installations />} />
-          <Route path="/qr-art" element={<QRArt />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/admin" element={<AdminDashboard />} />
-        </Routes>
-      </MainLayout>
-    </div>
-  );
-
   return (
     <Router>
-      {isTouchDevice ? (
-        appContent
-      ) : (
-        <ReactLenis
-          root
-          options={{
-            lerp: 0.1,
-            duration: 1.0,
-            smoothWheel: true,
-            wheelMultiplier: 0.9,
-            infinite: false,
-          }}
-        >
-          {appContent}
-        </ReactLenis>
-      )}
+      <div className="min-h-screen bg-black selection:bg-white selection:text-black font-sans">
+        <MainLayout>
+          <Routes>
+            <Route path="/" element={<Home2 />} />
+            <Route path="/home-2" element={<Home2 />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/commissioned-works" element={<CommissionedWorks />} />
+            <Route path="/virtual-gallery" element={<VirtualGallery />} />
+            <Route path="/exhibitions" element={<Exhibitions />} />
+            <Route path="/installations" element={<Installations />} />
+            <Route path="/qr-art" element={<QRArt />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/admin" element={<AdminDashboard />} />
+          </Routes>
+        </MainLayout>
+      </div>
     </Router>
   );
 }

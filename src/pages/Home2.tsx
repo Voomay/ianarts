@@ -73,7 +73,7 @@ const Hero = () => {
     >
       <div className="sticky top-0 h-screen w-full overflow-hidden">
         {/* Framed image */}
-        <motion.div style={{ clipPath: clip }} className="absolute inset-0">
+        <motion.div style={{ clipPath: clip }} className="absolute inset-0 will-change-transform">
           <motion.img
             src="/images/hero-luxury-interior.jpg"
             alt="IAN ART mosaic installation"
